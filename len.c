@@ -3,21 +3,22 @@
 
 /***
 Add in linux command:
-
 gcc len.c -o len && sudo mv len /bin/len && cd
-
 Have fun ! :)
 ***/
 
-int main(int argc, char *argv[]) {
+int strlen_function(char str[]){
 
     int len = 0;
+    for (int i = 0; str[i] != '\0' ; i++, len++);                               //len = numbers of char in str[]
+    return len;
 
-    if (argc < 2) printf("Usage: %s <string>\n", argv[0]), exit(1); //If there are no arguments, exit
-    
-    for (int i; argv[1][i] != '\0' ; i++, len++);                   //len = numbers of char in argv[1]
-    printf("%d\n", len);
+}
 
-    return 0;
+int main(int argc, char *argv[]) {
+
+    if (argc < 2) printf("Usage: %s <string>\n", argv[0]), exit(EXIT_FAILURE);  //If there are no arguments, exit
+    printf("%d\n", strlen_function(argv[1]));                                   //Print the len
+    return EXIT_SUCCESS;
 
 }
