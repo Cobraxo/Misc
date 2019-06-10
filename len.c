@@ -9,7 +9,7 @@ Have fun ! :)
 
 int strlen_function(char str[]){
 
-    int i;
+    unsigned int i;
     for (i = 0; str[i] != '\0' ; i++);                                          //i = numbers of char in str[]
     return i;
 
