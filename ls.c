@@ -121,8 +121,8 @@ char *return_perm_file(int p_mode) {
     //Type file
     if (S_ISDIR(p_mode))        buff_letter[0] = 'd';
     if (S_ISLNK(p_mode))        buff_letter[0] = 'l';
-	if (S_ISCHR(p_mode))        buff_letter[0] = 'c';
-	if (S_ISBLK(p_mode))        buff_letter[0] = 'b';
+    if (S_ISCHR(p_mode))        buff_letter[0] = 'c';
+    if (S_ISBLK(p_mode))        buff_letter[0] = 'b';
 
     //User perms
     if (p_mode & S_IRUSR)       buff_letter[1] = 'r';
