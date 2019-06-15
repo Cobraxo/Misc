@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
 
     print_files(all_files, perm_files);
 
-    return 0;
+    return EXIT_SUCCESS;
 
 }
 
