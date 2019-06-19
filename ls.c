@@ -116,7 +116,7 @@ void print_files(int p_all_files, int p_perm_files) {
 char *return_perm_file(int p_mode) {
 
     static char buff_letter[11];
-    strncpy(buff_letter, "----------\0", 11);        //Copy no perm for default file
+    strncpy(buff_letter, "----------", 10);     //Copy no perm for default file
 
     //Type file
     if (S_ISDIR(p_mode))        buff_letter[0] = 'd';
