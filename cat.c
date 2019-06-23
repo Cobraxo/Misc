@@ -47,7 +47,7 @@ int print_file(char p_file_name[], char p_default) {
     char buffer[BUFFER_SIZE] = {0};
 
     //If argc < 2, then print stdin
-    if (p_default == TRUE) {
+    if (p_default) {
 
         while (fgets(buffer, BUFFER_SIZE, stdin))   //Read each lines
             fprintf(stdout, "%s", buffer);          //Show it
