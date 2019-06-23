@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
-
 /*** 
 
 Name = len.c
@@ -18,6 +15,10 @@ set command:
 Quality is more important than quantity. One home run is much better than two doubles. hihi xD
 
 ***/
+
+#include <stdlib.h>
+#include <stdio.h>
+
 
 int strlen_function(char str[]){
 
