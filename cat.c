@@ -1,3 +1,21 @@
+/*** 
+
+Name = cat.c
+Author = Cobraxo
+Date = 06/23/2019
+
+download:
+    git clone https://github.com/Cobraxo/Misc.git
+ 
+ comile:
+    gcc cat.c -o cat
+set command:
+    sudo cp cat /bin/my_cat
+
+Do what you love, love what you do ! ^^
+
+***/
+
 #include <stdlib.h>
 #include <stdio.h>
 
