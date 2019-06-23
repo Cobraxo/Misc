@@ -1,4 +1,4 @@
-/*
+/***
 
 Name = ls.c
 Author = Cobraxo
@@ -15,7 +15,7 @@ set command:
 
 Enjoy ! :P
 
- */
+***/
 
 #include <sys/types.h>
 #include <sys/stat.h>
