@@ -26,7 +26,9 @@ Do what you love, love what you do ! ^^
 //Define buffer size, to get newlines of file
 #define BUFFER_SIZE 256
 
+
 int print_file(char p_file_name[], char p_default);
+
 
 int main(int argc, char *argv[]) {
 
