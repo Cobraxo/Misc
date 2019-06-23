@@ -1,10 +1,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/***
-Add in linux command:
-gcc len.c -o len && sudo mv len /bin/len && cd
-Have fun ! :)
+/*** 
+
+Name = len.c
+Author = Cobraxo
+Date = ?
+
+download:
+    git clone https://github.com/Cobraxo/Misc.git
+ 
+ comile:
+    gcc len.c -o len
+set command:
+    sudo cp len /bin/my_len
+
+Quality is more important than quantity. One home run is much better than two doubles. hihi xD
+
 ***/
 
 int strlen_function(char str[]){
