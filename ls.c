@@ -1,20 +1,15 @@
 /***
-
 Name = ls.c
 Author = Cobraxo
 Date = 06/15/2019
-
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
  comile:
     gcc ls.c -o ls
-
 set command:
     sudo cp ls /bin/my_ls
-
 Enjoy ! :P
-
 ***/
 
 #include <sys/types.h>
@@ -103,7 +98,7 @@ void print_files(int p_all_files, int p_perm_files) {
         }
 
         else                                                    //ls without -l option
-            if ((p_all_files|| files->d_name[0] != '.') && p_perm_files == FALSE)   //Print normal files and if p_all_files is true, print all files
+            if ((p_all_files|| files->d_name[0] != '.') && !p_perm_files)   //Print normal files and if p_all_files is true, print all files
                 printf("%s\n", files->d_name);
     
     }
