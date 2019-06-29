@@ -50,7 +50,7 @@ int print_file(char p_file_name[], char p_default) {
     if (p_default) {
 
         while (fgets(buffer, BUFFER_SIZE, stdin))   //Read each lines
-            fprintf(stdout, "%s", buffer);          //Show it
+            (void)fprintf(stdout, "%s", buffer);          //Show it
 
         return EXIT_SUCCESS;
 
@@ -71,7 +71,7 @@ int print_file(char p_file_name[], char p_default) {
 
     //Print each newlines of file
     while (fgets(buffer, BUFFER_SIZE, file_open))
-        fprintf(stdout, "%s", buffer);
+        (void)fprintf(stdout, "%s", buffer);
 
     return EXIT_SUCCESS;
 
