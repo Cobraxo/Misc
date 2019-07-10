@@ -16,6 +16,19 @@ Quality is more important than quantity. One home run is much better than two do
 #include <stdio.h>
 
 
+extern char *__progname;
+static int strlen_function(char str[]);
+static void usage(void);
+
+
+int main(int argc, char *argv[]) {
+
+    if (argc < 2) usage();  //If there are no arguments, exit
+    (void)printf("%d\n", strlen_function(argv[1]));                             //Print the len
+    return EXIT_SUCCESS;
+
+}
+
 static int strlen_function(char str[]){
 
     unsigned int i;
@@ -24,10 +37,9 @@ static int strlen_function(char str[]){
 
 }
 
-int main(int argc, char *argv[]) {
+static void usage(void) {
 
-    if (argc < 2) printf("Usage: %s <string>\n", argv[0]), exit(EXIT_FAILURE);  //If there are no arguments, exit
-    (void)printf("%d\n", strlen_function(argv[1]));                             //Print the len
-    return EXIT_SUCCESS;
+    fprintf(stderr, "usage: %s <string>\n", __progname);
+    exit(EXIT_FAILURE);
 
 }
