@@ -23,7 +23,7 @@ static void usage(void);
 
 int main(int argc, char *argv[]) {
 
-    if (argc < 2) usage();  //If there are no arguments, exit
+    if (argc < 2) usage();                                                      //If there are no arguments, exit
     (void)printf("%d\n", strlen_function(argv[1]));                             //Print the len
     return EXIT_SUCCESS;
 
