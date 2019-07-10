@@ -50,6 +50,10 @@ int main(int argc, char *argv[]) {
 
     }
 
+    //Update argc and argv
+    argc -= optind;
+    argv += optind;
+
     print_files(all_files, perm_files);
 
     return EXIT_SUCCESS;
