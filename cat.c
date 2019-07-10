@@ -7,7 +7,7 @@ Date = 06/23/2019
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- comile:
+ compile:
     gcc cat.c -o cat
 set command:
     sudo cp cat /bin/my_cat
