@@ -5,7 +5,7 @@ Date = 06/04/2019
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- comile:
+ compile:
     gcc len.c -o len
 set command:
     sudo cp len /bin/my_len
