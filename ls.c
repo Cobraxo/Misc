@@ -5,7 +5,7 @@ Date = 06/15/2019
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- comile:
+ compile:
     gcc ls.c -o ls
 set command:
     sudo cp ls /bin/my_ls
