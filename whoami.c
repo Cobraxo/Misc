@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
     uid = geteuid();
 
     //If there are no errors, init pw with getpwuid(uid);
-    pw = (errno || uid == -2 ? NULL : getpwuid(uid));   
+    pw = (errno || (signed int)uid == -2 ? NULL : getpwuid(uid));   
 
     //If init pw failed
     if (!pw)
