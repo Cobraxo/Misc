@@ -35,14 +35,14 @@ int main(int argc, char *argv[]) {
         cmp_argv1(argv[1]);
     
 
-    uid_t uid = -1;
+    uid_t uid = -2;
     passwd *pw = NULL;
     
     //Get euid
     uid = geteuid();
 
     //If there are no errors, init pw with getpwuid(uid);
-    pw = (errno || uid == -1 ? NULL : getpwuid(uid));   
+    pw = (errno || uid == -2 ? NULL : getpwuid(uid));   
 
     //If init pw failed
     if (!pw)
