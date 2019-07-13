@@ -56,9 +56,9 @@ int main(int argc, char *argv[]) {
 
 static void usage(void) {
 
-    printf("Usage: %s [OPTION]\n
-    --help for more information\n
-    --version for get the current version\n",
+    printf("Usage: %s [OPTION]\n \
+    --help for more information\n \
+    --version for get the current version\n", \
     __progname);
     
     exit(EXIT_FAILURE);
@@ -81,7 +81,7 @@ static void cmp_argv1_second(char p_argv[]) {
     }
 
     //Print --help
-    puts("Whoami:\n
+    puts("whoami:\n \
     This program going to show the username associated with the current user id.");
 
     exit(EXIT_SUCCESS);
@@ -104,8 +104,8 @@ static void cmp_argv1(char p_argv[]) {
     }
 
     //Print --version
-    puts("whoami 2019\n
-    https://github.com/Cobraxo/Misc\n
+    puts("whoami 2019:\n \
+    https://github.com/Cobraxo/Misc\n \
     Made by Cobraxo");
 
     exit(EXIT_SUCCESS);
