@@ -9,6 +9,7 @@ download:
  
  compile:
     gcc cat.c -o cat
+
 set command:
     sudo cp cat /bin/my_cat
 
