@@ -1,15 +1,20 @@
 /***
+
 Name = whoami.c
 Author = Cobraxo
 Date = 07/13/2019
+
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- compile:
+compile:
     gcc whoami.c -o whoami
+    
 set command:
     sudo cp whoami /bin/my_whoami
+    
 Now could you print your effective userid ? ^^
+
 ***/
 
 #include <sys/types.h>
