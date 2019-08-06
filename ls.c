@@ -1,4 +1,5 @@
 /***
+
 Name = ls.c
 Author = Cobraxo
 Date = 06/15/2019
@@ -6,11 +7,14 @@ Date = 06/15/2019
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- compile:
+compile:
     gcc ls.c -o ls
+    
 set command:
     sudo cp ls /bin/my_ls
+
 Enjoy ! :P
+
 ***/
 
 #include <sys/types.h>
