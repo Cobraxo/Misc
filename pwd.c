@@ -1,16 +1,20 @@
-/*** 
+/***
+
 Name = pwd.c
 Author = Cobraxo
 Date = 07/10/2019
+
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- compile:
+compile:
     gcc pwd.c -o pwd
+    
 set command:
     sudo cp pwd /bin/my_pwd
 
 I bet your current directory is "." ;)
+
 ***/
 
 #include <sys/stat.h>
