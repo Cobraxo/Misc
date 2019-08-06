@@ -1,4 +1,5 @@
-/*** 
+/***
+
 Name = len.c
 Author = Cobraxo
 Date = 06/04/2019
@@ -6,11 +7,14 @@ Date = 06/04/2019
 download:
     git clone https://github.com/Cobraxo/Misc.git
  
- compile:
+compile:
     gcc len.c -o len
+
 set command:
     sudo cp len /bin/my_len
+
 Quality is more important than quantity. One home run is much better than two doubles. hihi xD
+
 ***/
 
 #include <stdlib.h>
