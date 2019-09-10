@@ -17,10 +17,6 @@ It's more faster with auto :P
 
 ***/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <err.h>
 #include "auto.h"
 
 static void usage(void);
